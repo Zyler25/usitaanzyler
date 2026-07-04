@@ -1,0 +1,1 @@
+Open in VS Code, edit the content, push to GitHub, then import to Vercel.

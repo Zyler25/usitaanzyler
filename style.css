@@ -443,17 +443,316 @@ section p{
 
 }
 
-/* ===========================================
-   ABOUT
-=========================================== */
+/*=========================================
+            ABOUT SECTION
+=========================================*/
 
-#about p{
+.about{
 
-    max-width:900px;
+    padding:120px 8%;
 
+}
+
+.about-container{
+
+    max-width:1200px;
     margin:auto;
 
-    text-align:justify;
+}
+
+.section-title{
+
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:25px;
+
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.about-intro{
+
+    max-width:850px;
+    margin:0 auto 60px;
+
+    text-align:center;
+    color:var(--text-light);
+
+    line-height:1.9;
+    font-size:1.05rem;
+
+}
+
+.about-intro span{
+
+    color:var(--primary);
+    font-weight:700;
+
+}
+
+.resume-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+
+}
+
+.resume-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(79,195,247,.15);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    padding:30px;
+
+    transition:.35s;
+
+}
+
+.resume-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 10px 35px rgba(79,195,247,.18);
+
+}
+
+.resume-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:1.3rem;
+
+}
+
+.resume-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.resume-card li{
+
+    margin:14px 0;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+.available{
+
+    color:#6bff8a;
+
+    font-weight:600;
+
+}
+
+/*=========================
+      HIGHLIGHTS
+=========================*/
+
+.highlights{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.highlight-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(79,195,247,.15);
+
+    border-radius:20px;
+
+    padding:28px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 10px 30px rgba(79,195,247,.18);
+
+}
+
+.highlight-card h2{
+
+    color:var(--primary);
+
+    font-size:2.4rem;
+
+}
+
+.highlight-card p{
+
+    margin-top:10px;
+
+    color:var(--text-light);
+
+}
+
+/*=========================
+    RESUME BUTTON
+=========================*/
+
+.resume-button{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+.resume-button .btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.resume-button .btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(79,195,247,.3);
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .resume-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .highlights{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .about{
+
+        padding:80px 6%;
+
+    }
+
+    .section-title{
+
+        font-size:2.3rem;
+
+    }
+
+    .about-intro{
+
+        font-size:1rem;
+
+        text-align:left;
+
+    }
+
+    .resume-card{
+
+        padding:25px;
+
+    }
+
+    .highlight-card{
+
+        padding:22px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .highlights{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
+
+    .resume-card h3{
+
+        font-size:1.15rem;
+
+    }
+
+    .highlight-card h2{
+
+        font-size:2rem;
+
+    }
+
+    .resume-button .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
 
 }
 
